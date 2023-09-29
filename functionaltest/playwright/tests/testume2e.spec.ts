@@ -10,5 +10,5 @@ test('Testum Technologies', async ({ page }) => {
   await page.getByRole('link', { name: 'Who We Are' }).click();
   await page.getByRole('link', { name: 'Our Mission' }).click();
   await page.getByRole('link', { name: 'Our Vission' }).click();
-  expect(await page.getByRole('link', { name: 'Our Vission' })).toHaveText('Our Mission'); // failing test intensional to see failure notification in email and slack
+  // expect(await page.getByRole('link', { name: 'Our Vission' })).toHaveText('Our Mission'); // failing test intensional to see failure notification in email and slack
 });
